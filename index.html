@@ -1,0 +1,2444 @@
+<!doctype html>
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ACTUAL ACCOUNTING | Business Consultancy &amp; Accounting Practice in Rwanda
+  </title>
+  <meta content="ACTUAL ACCOUNTING is an accounting and business consultancy practice based in Rwanda. A trading name (BDA) of ACTUAL HOLDINGS CO LTD." name="description"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="navbar">
+   <div class="container nav-container">
+    <a class="brand-logo-link" href="#home" id="brand-logo-btn" onclick="navigateTo('home')" title="ACTUAL HOLDING - Home">
+     <div class="brand-emblem">
+      <img alt="ACTUAL HOLDING CO LTD Logo" src="actual-logo.jpeg"/>
+     </div>
+     <div class="brand-text-col">
+      <div class="brand-main-title">
+       ACTUAL
+       <span>
+        ACCOUNTING
+       </span>
+      </div>
+      <div class="brand-tagline">
+       ACTUAL HOLDINGS CO LTD
+      </div>
+     </div>
+    </a>
+    <!-- Desktop Navigation Links -->
+    <nav>
+     <ul class="nav-links">
+      <li>
+       <a class="nav-link" data-page="home" href="#home" onclick="navigateTo('home')">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="nav-link" data-page="services" href="#services" onclick="navigateTo('services')">
+        Services
+       </a>
+      </li>
+      <li>
+       <a class="nav-link" data-page="about" href="#about" onclick="navigateTo('about')">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a class="nav-link" data-page="family" href="#family" onclick="navigateTo('family')">
+        ACTUAL Family
+       </a>
+      </li>
+      <li>
+       <a class="nav-link" data-page="resources" href="#resources" onclick="navigateTo('resources')">
+        Resources
+       </a>
+      </li>
+      <li>
+       <a class="nav-link" data-page="contact" href="#contact" onclick="navigateTo('contact')">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <!-- Right Header Action Controls -->
+    <div class="nav-actions">
+     <button class="btn btn-outline btn-sm btn-calculator-nav" id="nav-calc-btn" onclick="openTaxModal()">
+      <svg fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="15">
+       <rect height="20" rx="2" width="16" x="4" y="2">
+       </rect>
+       <line x1="8" x2="16" y1="6" y2="6">
+       </line>
+       <line x1="16" x2="16" y1="14" y2="18">
+       </line>
+       <path d="M16 10h.01">
+       </path>
+       <path d="M12 10h.01">
+       </path>
+       <path d="M8 10h.01">
+       </path>
+       <path d="M12 14h.01">
+       </path>
+       <path d="M8 14h.01">
+       </path>
+       <path d="M12 18h.01">
+       </path>
+       <path d="M8 18h.01">
+       </path>
+      </svg>
+      <span>
+       Tax Calculator
+      </span>
+     </button>
+     <button class="btn btn-ghost btn-sm" id="nav-auth-btn" onclick="navigateTo('login')">
+      Log In
+     </button>
+     <button class="btn btn-gold btn-sm" id="nav-signup-btn" onclick="navigateTo('signup')">
+      Sign Up
+     </button>
+     <!-- Mobile Menu Trigger Button -->
+     <button aria-label="Open Navigation Menu" class="mobile-menu-btn" onclick="openMobileMenu()">
+      <svg fill="none" height="22" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="22">
+       <line x1="3" x2="21" y1="12" y2="12">
+       </line>
+       <line x1="3" x2="21" y1="6" y2="6">
+       </line>
+       <line x1="3" x2="21" y1="18" y2="18">
+       </line>
+      </svg>
+     </button>
+    </div>
+   </div>
+  </header>
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" onclick="closeMobileMenu()">
+   <div class="mobile-drawer" onclick="event.stopPropagation()">
+    <div class="drawer-header">
+     <div style="display:flex; align-items:center; gap:10px;">
+      <div class="brand-emblem" style="width:36px; height:36px;">
+       <img alt="ACTUAL HOLDINGS CO LTD Logo" src="actual-logo.jpeg"/>
+      </div>
+      <div class="brand-main-title" style="font-size: 1.05rem;">
+       ACTUAL
+       <span>
+        ACCOUNTING
+       </span>
+      </div>
+     </div>
+     <button class="btn btn-ghost btn-sm" onclick="closeMobileMenu()" style="font-size:1.2rem;">
+      ✕
+     </button>
+    </div>
+    <ul class="drawer-links">
+     <li>
+      <a class="drawer-link" data-page="home" href="#home" onclick="navigateTo('home')">
+       Home
+       <span>
+        →
+       </span>
+      </a>
+     </li>
+     <li>
+      <a class="drawer-link" data-page="services" href="#services" onclick="navigateTo('services')">
+       Services
+       <span>
+        →
+       </span>
+      </a>
+     </li>
+     <li>
+      <a class="drawer-link" data-page="about" href="#about" onclick="navigateTo('about')">
+       About Us
+       <span>
+        →
+       </span>
+      </a>
+     </li>
+     <li>
+      <a class="drawer-link" data-page="family" href="#family" onclick="navigateTo('family')">
+       ACTUAL Family
+       <span>
+        →
+       </span>
+      </a>
+     </li>
+     <li>
+      <a class="drawer-link" data-page="resources" href="#resources" onclick="navigateTo('resources')">
+       Rwanda Tax Hub
+       <span>
+        →
+       </span>
+      </a>
+     </li>
+     <li>
+      <a class="drawer-link" data-page="contact" href="#contact" onclick="navigateTo('contact')">
+       Contact
+       <span>
+        →
+       </span>
+      </a>
+     </li>
+    </ul>
+    <div class="drawer-actions">
+     <button class="btn btn-outline" onclick="closeMobileMenu(); openTaxModal();">
+      Rwanda Tax Calculator
+     </button>
+     <button class="btn btn-primary" onclick="closeMobileMenu(); openConsultationModal();">
+      Book Consultation
+     </button>
+    </div>
+   </div>
+  </div>
+  <div class="page-view active" id="page-home">
+   <!-- Hero Section -->
+   <section class="hero-section">
+    <div class="container hero-grid">
+     <div class="hero-content">
+      <div class="section-badge gold-badge">
+       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z">
+       </path>
+       <span>
+        RRA Certified Fiduciary &amp; Business Consultants
+       </span>
+      </div>
+      <h1 class="hero-title">
+       Transparent Accounting, Tax Compliance &amp;
+       <span class="highlight">
+        Business Advisory
+       </span>
+       in Rwanda.
+      </h1>
+      <p class="hero-desc">
+       ACTUAL ACCOUNTING provides end-to-end statutory bookkeeping, RRA tax filings, electronic invoicing (EBM V2), and financial advisory for Rwandan enterprises and international investors.
+      </p>
+      <div class="hero-ctas">
+       <button class="btn btn-primary btn-lg" onclick="openConsultationModal()">
+        <span>
+         Book Free Consultation
+        </span>
+        <svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16">
+         <line x1="5" x2="19" y1="12" y2="12">
+         </line>
+         <polyline points="12 5 19 12 12 19">
+         </polyline>
+        </svg>
+       </button>
+       <button class="btn btn-gold btn-lg" onclick="openTaxModal()">
+        <span>
+         Rwanda Tax Calculator
+        </span>
+       </button>
+       <button class="btn btn-gold btn-lg" onclick="navigateTo('services')">
+        <span>
+         View Retainer Plans
+        </span>
+       </button>
+      </div>
+      <div class="hero-trust-pills">
+       <div class="trust-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+         <polyline points="20 6 9 17 4 12">
+         </polyline>
+        </svg>
+        <span>
+         Zero-Penalty Guarantee
+        </span>
+       </div>
+       <div class="trust-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+         <polyline points="20 6 9 17 4 12">
+         </polyline>
+        </svg>
+        <span>
+         RRA &amp; ICPAR Certified
+        </span>
+       </div>
+       <div class="trust-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+         <polyline points="20 6 9 17 4 12">
+         </polyline>
+        </svg>
+        <span>
+         Kigali
+        </span>
+       </div>
+      </div>
+     </div>
+     <!-- Hero Visual Preview Card -->
+     <div class="hero-visual">
+      <div class="hero-card">
+       <div class="hero-card-header">
+        <div class="hero-card-title">
+         <svg fill="none" height="18" stroke="#0F3D2E" stroke-width="2" viewbox="0 0 24 24" width="18">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+          </path>
+         </svg>
+         <span>
+          Rwanda Client Compliance Status
+         </span>
+        </div>
+        <div class="status-badge-active">
+         <span class="status-dot">
+         </span>
+         <span>
+          100% Compliant
+         </span>
+        </div>
+       </div>
+       <div class="hero-stats-row">
+        <div class="stat-box">
+         <div class="stat-box-label">
+          Monthly Filing Health
+         </div>
+         <div class="stat-box-value">
+          Zero Penalties
+         </div>
+         <div class="stat-box-sub">
+          ✓ 36 Consecutive Months
+         </div>
+        </div>
+        <div class="stat-box">
+         <div class="stat-box-label">
+          VAT &amp; PAYE Status
+         </div>
+         <div class="stat-box-value">
+          Cleared
+         </div>
+         <div class="stat-box-sub">
+          ✓ RRA Verified Receipt
+         </div>
+        </div>
+       </div>
+       <div class="compliance-timeline">
+        <div class="timeline-item">
+         <span class="timeline-name">
+          <svg fill="none" height="14" stroke="#0F3D2E" stroke-width="2" viewbox="0 0 24 24" width="14">
+           <polyline points="20 6 9 17 4 12">
+           </polyline>
+          </svg>
+          Monthly PAYE &amp; RSSB Filing
+         </span>
+         <span class="timeline-date">
+          Due: 15th Monthly
+         </span>
+        </div>
+        <div class="timeline-item">
+         <span class="timeline-name">
+          <svg fill="none" height="14" stroke="#0F3D2E" stroke-width="2" viewbox="0 0 24 24" width="14">
+           <polyline points="20 6 9 17 4 12">
+           </polyline>
+          </svg>
+          Quarterly/Monthly VAT Return
+         </span>
+         <span class="timeline-date">
+          Due: 15th Monthly
+         </span>
+        </div>
+        <div class="timeline-item">
+         <span class="timeline-name">
+          <svg fill="none" height="14" stroke="#0F3D2E" stroke-width="2" viewbox="0 0 24 24" width="14">
+           <polyline points="20 6 9 17 4 12">
+           </polyline>
+          </svg>
+          Corporate Income Tax (CIT)
+         </span>
+         <span class="timeline-date">
+          Due: March 31
+         </span>
+        </div>
+       </div>
+       <!-- Draft HQ Photo Slot in Hero Card -->
+       <div class="draft-image-slot" style="margin-top:18px; height:120px;">
+        <img alt="ACTUAL ACCOUNTING Kigali Office" referrerpolicy="no-referrer" src="/src/assets/images/hero_office_kigali_1786742261109.jpg"/>
+        <span class="draft-badge">
+         📍 Kigali
+        </span>
+       </div>
+       <div style="margin-top:16px; text-align:center;">
+        <button class="btn btn-primary btn-sm" onclick="openTaxModal()" style="width:100%;">
+         Test Your Tax Calculation Live →
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Trust Metrics Strip -->
+   <section class="metrics-strip">
+    <div class="container">
+     <div class="metrics-grid">
+      <div class="metric-item">
+       <div class="metric-num">
+        120+
+       </div>
+       <div class="metric-label">
+        Rwandan Enterprises Managed
+       </div>
+      </div>
+      <div class="metric-item">
+       <div class="metric-num">
+        100%
+       </div>
+       <div class="metric-label">
+        On-Time RRA Filing Record
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Practice Areas Overview -->
+   <section class="section-py">
+    <div class="container">
+     <div class="section-header">
+      <div class="section-badge">
+       Core Practice Areas
+      </div>
+      <h2 class="section-title">
+       Comprehensive Financial Services Built for Rwanda
+      </h2>
+      <p class="section-subtitle">
+       From routine statutory bookkeeping to high-stakes RRA tax audits and corporate restructuring, we handles all financial complexities.
+      </p>
+     </div>
+     <div class="cards-grid">
+      <!-- Card 1 -->
+      <div class="card">
+       <div class="card-icon">
+        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+         <rect height="14" rx="2" ry="2" width="20" x="2" y="7">
+         </rect>
+         <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+         </path>
+        </svg>
+       </div>
+       <h3 class="card-title">
+        Accounting &amp; Bookkeeping
+       </h3>
+       <p class="card-desc">
+        Monthly general ledger maintenance, bank reconciliations, EBM V2 invoice verification, and GAAP/IFRS financial reporting.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         EBM V2.3 Reconciliation
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Multi-Currency Ledger Support
+        </li>
+       </ul>
+       <button class="btn btn-outline btn-sm" onclick="openConsultationModal('Accounting &amp; Bookkeeping')">
+        Request Service
+       </button>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+       <div class="card-icon">
+        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z">
+         </path>
+        </svg>
+       </div>
+       <h3 class="card-title">
+        RRA Tax Compliance &amp; Audit
+       </h3>
+       <p class="card-desc">
+        Accurate preparation and filing of monthly PAYE, RSSB, VAT, Withholding Taxes (WHT), and Corporate Income Tax (CIT) defense.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Monthly PAYE, VAT &amp; RSSB Filings
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         RRA Tax Audit Defense
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Annual CIT Declaration
+        </li>
+       </ul>
+       <button class="btn btn-outline btn-sm" onclick="openConsultationModal('RRA Tax Compliance')">
+        Request Service
+       </button>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+       <div class="card-icon">
+        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+         <circle cx="12" cy="12" r="10">
+         </circle>
+         <polyline points="12 6 12 12 14 14">
+         </polyline>
+        </svg>
+       </div>
+       <h3 class="card-title">
+        RDB Company Setup &amp; Advisory
+       </h3>
+       <p class="card-desc">
+        Fast-track business registration with Rwanda Development Board (RDB), obtaining TIN, VAT activation, and local licensing.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         24-Hour RDB Registration
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Foreign Investor Onboarding
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Shareholder Agreements
+        </li>
+       </ul>
+       <button class="btn btn-outline btn-sm" onclick="openConsultationModal('RDB Company Setup')">
+        Request Service
+       </button>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+       <div class="card-icon">
+        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+         <line x1="18" x2="18" y1="20" y2="10">
+         </line>
+         <line x1="12" x2="12" y1="20" y2="4">
+         </line>
+         <line x1="6" x2="6" y1="20" y2="14">
+         </line>
+        </svg>
+       </div>
+       <h3 class="card-title">
+        Irembo services
+       </h3>
+       <p class="card-desc">
+        Irembo is Rwanda’s digital government service platform that allows citizens and residents to access public services online quickly, securely, and conveniently.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Application for government documents
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Payment of government service fees
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Other public and government services
+        </li>
+       </ul>
+       <button class="btn btn-outline btn-sm" onclick="openConsultationModal('irembo servises')">
+        Request Service
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Monthly Retainer Pricing Plans -->
+   <section class="section-py" style="background-color: var(--color-surface-subtle); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+     <div class="section-header">
+      <div class="section-badge gold-badge">
+       Transparent Pricing
+      </div>
+      <h2 class="section-title">
+       Monthly Retainer Packages
+      </h2>
+      <p class="section-subtitle">
+       No surprise billings or hidden surcharges. Predictable monthly retainers backed by our Zero-Penalty Guarantee.
+      </p>
+     </div>
+     <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="pricing-card">
+       <div class="pricing-header">
+        <div class="plan-name">
+         Starter SME
+        </div>
+        <div class="plan-target">
+         Small shops, consultancies &amp; sole proprietors
+        </div>
+        <div class="plan-price">
+         150K
+         <span class="plan-currency">
+          RWF
+         </span>
+        </div>
+        <div class="plan-period">
+         per month billed quarterly
+        </div>
+       </div>
+       <ul class="pricing-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Up to 50 monthly transactions
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Monthly PAYE &amp; RSSB declarations
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Monthly/Quarterly VAT filing
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Monthly Profit &amp; Loss Statement
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Dedicated Lead Accountant
+        </li>
+       </ul>
+       <button class="btn btn-outline" onclick="openConsultationModal('Starter SME Plan - 150,000 RWF')">
+        Select Starter SME
+       </button>
+      </div>
+      <!-- Plan 2 (Featured) -->
+      <div class="pricing-card featured">
+       <div class="pricing-badge">
+        Most Popular
+       </div>
+       <div class="pricing-header">
+        <div class="plan-name">
+         Growth Enterprise
+        </div>
+        <div class="plan-target">
+         Growing companies, hospitality, tech &amp; logistics
+        </div>
+        <div class="plan-price">
+         380K
+         <span class="plan-currency">
+          RWF
+         </span>
+        </div>
+        <div class="plan-period">
+         per month billed quarterly
+        </div>
+       </div>
+       <ul class="pricing-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Up to 250 monthly transactions
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Complete RRA Tax Filing &amp; EBM V2 Audits
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Payroll processing for up to 25 staff
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Full Financial Statement &amp; Cashflow Model
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         RRA Tax Audit Defense SLA included
+        </li>
+       </ul>
+       <button class="btn btn-primary" onclick="openConsultationModal('Growth Enterprise Plan - 380,000 RWF')">
+        Select Growth Enterprise
+       </button>
+      </div>
+      <!-- Plan 3 -->
+      <div class="pricing-card">
+       <div class="pricing-header">
+        <div class="plan-name">
+         Corporate Suite
+        </div>
+        <div class="plan-target">
+         Multi-entity groups, manufacturers &amp; foreign corps
+        </div>
+        <div class="plan-price">
+         850K
+         <span class="plan-currency">
+          RWF
+         </span>
+        </div>
+        <div class="plan-period">
+         per month billed quarterly
+        </div>
+       </div>
+       <ul class="pricing-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Unlimited transactions &amp; multi-branch
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Dedicated Virtual CFO &amp; Senior CPA
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         IFRS compliant annual audit representation
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Tax planning, transfer pricing &amp; incentives
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         24/7 priority emergency hotline
+        </li>
+       </ul>
+       <button class="btn btn-outline" onclick="openConsultationModal('Corporate Suite Plan - 850,000 RWF')">
+        Select Corporate Suite
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- The ACTUAL Family Banner Callout -->
+   <section class="section-py">
+    <div class="container">
+     <div class="family-intro-banner">
+      <div style="max-width: 650px;">
+       <div class="section-badge gold-badge" style="margin-bottom:12px;">
+        The ACTUAL Ecosystem
+       </div>
+       <h2 style="color:#FFF; font-size:2rem; margin-bottom:12px;">
+        Part of ACTUAL HOLDINGS CO LTD
+       </h2>
+       <p style="color:#CBD5E1; font-size:1rem; line-height:1.6; margin-bottom:24px;">
+        ACTUAL ACCOUNTING is proud to power the business infrastructure of Rwandan enterprises alongside our sister entities:
+        <strong>
+         ACTUAL PHOTOGRAPHY
+        </strong>
+        ,
+        <strong>
+         ACTUAL DESIGN
+        </strong>
+        , and
+        <strong>
+         ACTUAL MUSIC
+        </strong>
+        .
+       </p>
+       <button class="btn btn-gold" onclick="navigateTo('family')">
+        <span>
+         Explore The ACTUAL Family
+        </span>
+        <svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16">
+         <line x1="5" x2="19" y1="12" y2="12">
+         </line>
+         <polyline points="12 5 19 12 12 19">
+         </polyline>
+        </svg>
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="page-view" id="page-services">
+   <section class="section-py" style="background:var(--color-surface-subtle); border-bottom:1px solid var(--color-border);">
+    <div class="container">
+     <div class="section-header">
+      <div class="section-badge">
+       Practice Areas &amp; Retainers
+      </div>
+      <h1 class="section-title">
+       Our Practice Services
+      </h1>
+      <p class="section-subtitle">
+       Clear scope, transparent deliverable schedules, and guaranteed statutory compliance for Rwandan businesses.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section-py">
+    <div class="container">
+     <div class="cards-grid" style="margin-bottom:60px;">
+      <!-- Service 1 Detail -->
+      <div class="card">
+       <div class="card-icon">
+        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+         <rect height="18" rx="2" ry="2" width="18" x="3" y="3">
+         </rect>
+         <line x1="3" x2="21" y1="9" y2="9">
+         </line>
+         <line x1="9" x2="9" y1="21" y2="9">
+         </line>
+        </svg>
+       </div>
+       <h3 class="card-title">
+        Bookkeeping &amp; Financial Accounts
+       </h3>
+       <p class="card-desc">
+        We convert your raw physical receipts, invoices, and bank statements into rigorous cloud-based ledgers mapped to Rwandan accounting standards.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Cloud Ledger Setup (QuickBooks / Zoho / Xero)
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Monthly Balance Sheet &amp; Trial Balance
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         EBM V2 Invoice Cross-Validation
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Accounts Payable &amp; Receivable Aging
+        </li>
+       </ul>
+       <button class="btn btn-primary btn-sm" onclick="openConsultationModal('Bookkeeping &amp; Financial Accounts')">
+        Inquire for Your Business
+       </button>
+      </div>
+      <!-- Service 2 Detail -->
+      <div class="card">
+       <div class="card-icon">
+        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+         </path>
+         <polyline points="14 2 14 8 20 8">
+         </polyline>
+         <line x1="16" x2="8" y1="13" y2="13">
+         </line>
+         <line x1="16" x2="8" y1="17" y2="17">
+         </line>
+         <polyline points="10 9 9 9 8 9">
+         </polyline>
+        </svg>
+       </div>
+       <h3 class="card-title">
+        RRA Tax Filings &amp; Audit Defense
+       </h3>
+       <p class="card-desc">
+        Eliminate penalties permanently. We handle your entire electronic tax declaration lifecycle with Rwanda Revenue Authority.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Monthly PAYE &amp; RSSB declarations by 15th
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Value Added Tax (VAT) monthly/quarterly
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Annual Corporate Income Tax (CIT) 28%
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Comprehensive RRA desk/field audit representation
+        </li>
+       </ul>
+       <button class="btn btn-primary btn-sm" onclick="openConsultationModal('RRA Tax Filings')">
+        Inquire for Your Business
+       </button>
+      </div>
+      <!-- Service 3 Detail -->
+      <div class="card">
+       <div class="card-icon">
+        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+         <circle cx="12" cy="12" r="10">
+         </circle>
+         <polyline points="12 6 12 12 14 14">
+         </polyline>
+        </svg>
+       </div>
+       <h3 class="card-title">
+        Rwanda Company Registration &amp; Licensing
+       </h3>
+       <p class="card-desc">
+        Establishing your legal entity in Rwanda with full foreign investor assistance, RDB certificate generation, and opening bank accounts.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         24-Hour RDB Incorporation
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         TIN Issuance &amp; VAT Registration
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         EBM V2 software setup
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Corporate Bank Account opening support
+        </li>
+       </ul>
+       <button class="btn btn-primary btn-sm" onclick="openConsultationModal('Rwanda Company Registration')">
+        Inquire for Your Business
+       </button>
+      </div>
+     </div>
+     <!-- Onboarding 3-Step Process -->
+     <div class="section-header">
+      <div class="section-badge">
+       How It Works
+      </div>
+      <h2 class="section-title">
+       The 3-Step Client Journey
+      </h2>
+     </div>
+     <div class="pillars-grid">
+      <div class="pillar-card">
+       <div class="pillar-num">
+        01
+       </div>
+       <h3 style="font-size:1.15rem; margin-bottom:8px;">
+        Discovery &amp; Books Audit
+       </h3>
+       <p class="text-muted" style="font-size:0.9rem;">
+        We review your prior tax declarations, verify pending liabilities with RRA, and perform a complete ledger health check.
+       </p>
+      </div>
+      <div class="pillar-card">
+       <div class="pillar-num">
+        02
+       </div>
+       <h3 style="font-size:1.15rem; margin-bottom:8px;">
+        Cleanup &amp; System Setup
+       </h3>
+       <p class="text-muted" style="font-size:0.9rem;">
+        We bring your books up to date, resolve past discrepancies, configure your EBM V2 pipeline, and establish digital document flows.
+       </p>
+      </div>
+      <div class="pillar-card">
+       <div class="pillar-num">
+        03
+       </div>
+       <h3 style="font-size:1.15rem; margin-bottom:8px;">
+        Seamless Monthly Care
+       </h3>
+       <p class="text-muted" style="font-size:0.9rem;">
+        Your dedicated CPA handles monthly payroll, files all statutory returns on time, and delivers management reports every month.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="page-view" id="page-about">
+   <section class="section-py" style="background:var(--color-surface-subtle); border-bottom:1px solid var(--color-border);">
+    <div class="container">
+     <div class="section-header">
+      <div class="section-badge">
+       Corporate Background
+      </div>
+      <h1 class="section-title">
+       About ACTUAL ACCOUNTING
+      </h1>
+      <p class="section-subtitle">
+       A premier accounting and business consultancy practice based in Kigali, Rwanda.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section-py">
+    <div class="container">
+     <div style="display:grid; grid-template-columns:1.2fr 0.8fr; gap:40px; align-items:center; margin-bottom:60px;">
+      <div>
+       <h2 style="font-size:1.8rem; margin-bottom:16px; color:var(--color-primary-dark);">
+        Our Structure &amp; Corporate Identity
+       </h2>
+       <p style="font-size:1rem; color:#475569; line-height:1.7; margin-bottom:16px;">
+        <strong>
+         ACTUAL ACCOUNTING
+        </strong>
+        is an accounting and business consultancy practice operating as a trading name (Business Doing As / BDA) of
+        <strong>
+         ACTUAL HOLDINGS CO LTD
+        </strong>
+        , a registered company under Rwandan law with headquarters in Kigali.
+       </p>
+       <p style="font-size:1rem; color:#475569; line-height:1.7; margin-bottom:20px;">
+        We were founded to bridge the gap between traditional manual bookkeeping and the rapidly digitizing regulatory landscape of Rwanda. With Rwanda Revenue Authority's rollouts of EBM V2, automated risk engines, and strict filing deadlines, modern businesses require proactive, certified financial advisors who guarantee compliance.
+       </p>
+       <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <div style="background:#FFFFFF; border:1px solid var(--color-border); padding:12px 18px; border-radius:8px;">
+         <div style="font-size:0.75rem; color:var(--color-text-muted); font-weight:700;">
+          REGISTRATION BODY
+         </div>
+         <div style="font-weight:700; color:var(--color-primary-dark);">
+          Rwanda Development Board (RDB)
+         </div>
+        </div>
+        <div style="background:#FFFFFF; border:1px solid var(--color-border); padding:12px 18px; border-radius:8px;">
+         <div style="font-size:0.75rem; color:var(--color-text-muted); font-weight:700;">
+          PRACTICE ACCREDITATION
+         </div>
+         <div style="font-weight:700; color:var(--color-primary-dark);">
+          ....... QUALIFIED
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- Draft Boardroom / Practice Photo Slot -->
+      <div>
+       <div class="draft-image-slot" style="height:280px; margin-bottom:20px; box-shadow:var(--shadow-md);">
+        <img alt="ACTUAL ACCOUNTING Boardroom &amp; CPA Consultants" referrerpolicy="no-referrer" src="/src/assets/images/corporate_consultants_1786742274556.jpg"/>
+        <span class="draft-badge">
+         Draft Photo Slot
+        </span>
+        <div class="draft-badge-subtle">
+         <span>
+          CEO, ACTUAL HOLDING CO LTD
+         </span>
+         <span style="color:var(--color-gold); font-weight:700;">
+          MUGISHA J.DEDIEU
+         </span>
+        </div>
+       </div>
+       <div style="background:var(--color-primary-dark); color:#FFF; padding:24px; border-radius:var(--radius-md); border:1px solid var(--color-gold);">
+        <div style="font-size:0.75rem; color:var(--color-gold); font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">
+         Our Core Mission
+        </div>
+        <h3 style="color:#FFF; font-size:1.2rem; margin-bottom:10px;">
+         Total Financial Transparency &amp; Peace of Mind
+        </h3>
+        <p style="color:#CBD5E1; font-size:0.86rem; line-height:1.55; margin-bottom:14px;">
+         Empowering Rwandan enterprises and foreign investors with rigorous, penalty-free accounting systems.
+        </p>
+        <button class="btn btn-gold btn-sm" onclick="openConsultationModal()">
+         Book a Direct Meeting
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- 4 Core Pillars -->
+     <div class="section-header">
+      <div class="section-badge">
+       Our Standard
+      </div>
+      <h2 class="section-title">
+       The 4 Practice Pillars
+      </h2>
+     </div>
+     <div class="pillars-grid">
+      <div class="pillar-card">
+       <div class="pillar-num">
+        01
+       </div>
+       <h3 style="font-size:1.15rem; margin-bottom:8px;">
+        Zero-Penalty SLA
+       </h3>
+       <p class="text-muted" style="font-size:0.9rem;">
+        We take contractual responsibility for on-time filings. If a delay occurs due to our error, we cover all statutory penalties.
+       </p>
+      </div>
+      <div class="pillar-card">
+       <div class="pillar-num">
+        02
+       </div>
+       <h3 style="font-size:1.15rem; margin-bottom:8px;">
+        Digital-First Accuracy
+       </h3>
+       <p class="text-muted" style="font-size:0.9rem;">
+        Direct integration with EBM V2, automated bank feeds, and cloud document repositories ensure every figure is verified.
+       </p>
+      </div>
+      <div class="pillar-card">
+       <div class="pillar-num">
+        03
+       </div>
+       <h3 style="font-size:1.15rem; margin-bottom:8px;">
+        Absolute Confidentiality
+       </h3>
+       <p class="text-muted" style="font-size:0.9rem;">
+        Bank-grade encryption for all financial records and strict non-disclosure agreements protecting your commercial data.
+       </p>
+      </div>
+      <div class="pillar-card">
+       <div class="pillar-num">
+        04
+       </div>
+       <h3 style="font-size:1.15rem; margin-bottom:8px;">
+        Local &amp; Global Fluency
+       </h3>
+       <p class="text-muted" style="font-size:0.9rem;">
+        Trilingual team fluent in English, French, and Kinyarwanda, translating complex Rwandan tax codes for international founders.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="page-view" id="page-family">
+   <section class="section-py" style="background:var(--color-surface-subtle); border-bottom:1px solid var(--color-border);">
+    <div class="container">
+     <div class="section-header">
+      <div class="section-badge gold-badge">
+       Corporate Group
+      </div>
+      <h1 class="section-title">
+       The ACTUAL Family
+      </h1>
+      <p class="section-subtitle">
+       ACTUAL HOLDINGS CO LTD operates four specialized business and creative divisions, delivering holistic solutions for visionary enterprises.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section-py">
+    <div class="container">
+     <!-- Corporate Group Headquarters Banner Card with Photo & Official Logo -->
+     <div style="background:var(--color-primary-dark); border-radius:var(--radius-lg); border:1px solid var(--color-gold); overflow:hidden; display:grid; grid-template-columns:1.15fr 0.85fr; gap:0; margin-bottom:50px; box-shadow:var(--shadow-lg);">
+      <div style="padding:40px; color:#FFF; display:flex; flex-direction:column; justify-content:center;">
+       <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px;">
+        <div style="width:58px; height:58px; background:#FFF; border-radius:var(--radius-md); padding:6px; box-shadow:0 4px 12px rgba(0,0,0,0.25); flex-shrink:0;">
+         <svg height="100%" viewbox="0 0 500 500" width="100%">
+          <path d="M 250 20 L 25 390 L 230 350 L 230 265 L 186 265 L 250 137 Z" fill="#121619">
+          </path>
+          <path d="M 250 20 L 475 390 L 270 350 L 270 265 L 314 265 L 250 137 Z" fill="#00824B">
+          </path>
+         </svg>
+        </div>
+        <div>
+         <div class="section-badge gold-badge" style="margin-bottom:4px; display:inline-block;">
+          Parent Corporate Group
+         </div>
+         <h2 style="color:#FFF; font-size:1.8rem; margin:0; line-height:1.2;">
+          ACTUAL HOLDINGS CO LTD
+         </h2>
+        </div>
+       </div>
+       <p style="color:#CBD5E1; font-size:0.95rem; line-height:1.65; margin-bottom:20px;">
+        Headquartered in Kigali, ACTUAL HOLDINGS operates four cohesive pillars of modern business development: certified accounting and statutory compliance, high-fashion and commercial photography, strategic brand design, and acoustic audio engineering.
+       </p>
+       <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <button class="btn btn-gold btn-sm" onclick="openConsultationModal('ACTUAL Holdings Group Inquiry')">
+         Partner with the Group
+        </button>
+        <button class="btn btn-outline btn-sm" onclick="navigateTo('services')" style="color:#FFF; border-color:rgba(255,255,255,0.4);">
+         View Accounting Services
+        </button>
+       </div>
+      </div>
+      <div class="draft-image-slot" style="min-height:300px; border-radius:0; border:none; border-left:1px solid rgba(212,175,55,0.3);">
+       <img alt="ACTUAL HOLDINGS Kigali Headquarters" referrerpolicy="no-referrer" src="/src/assets/images/kigali_business_tower_1786742286170.jpg"/>
+       <span class="draft-badge">
+        LIKE WEBSITE PHOTO
+       </span>
+       <div class="draft-badge-subtle">
+        <span>
+         OUR BRAND
+        </span>
+        <span style="color:var(--color-gold); font-weight:700;">
+         ACTUAL
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="family-grid" style="margin-bottom:60px;">
+      <!-- Venture 1: ACTUAL ACCOUNTING -->
+      <div class="family-card" style="border-top: 4px solid #0F3D2E;">
+       <div class="draft-image-slot" style="height:140px; margin-bottom:16px;">
+        <img alt="ACTUAL ACCOUNTING" referrerpolicy="no-referrer" src="/src/assets/images/hero_office_kigali_1786742261109.jpg"/>
+        <span class="draft-badge">
+         Accounting Practice Slot
+        </span>
+       </div>
+       <span class="family-card-badge" style="background:#E8F2EE; color:#0F3D2E;">
+        Financial Practice
+       </span>
+       <h3 class="card-title">
+        ACTUAL ACCOUNTING
+       </h3>
+       <p class="card-desc">
+        Financial clarity, RRA statutory compliance, bookkeeping, and business advisory for businesses across Rwanda.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         RRA Tax Compliance &amp; Audit Defense
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Bookkeeping &amp; Virtual CFO Modeling
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         24-Hour RDB Registration
+        </li>
+       </ul>
+       <button class="btn btn-primary btn-sm" onclick="navigateTo('services')">
+        Explore Services →
+       </button>
+      </div>
+      <!-- Venture 2: ACTUAL PHOTOGRAPHY -->
+      <div class="family-card" style="border-top: 4px solid #D4AF37;">
+       <div class="draft-image-slot" style="height:140px; margin-bottom:16px;">
+        <img alt="ACTUAL PHOTOGRAPHY" referrerpolicy="no-referrer" src="/src/assets/images/corporate_consultants_1786742274556.jpg"/>
+        <span class="draft-badge gold">
+         Photography Studio Slot
+        </span>
+       </div>
+       <span class="family-card-badge" style="background:#F7F1DE; color:#8F721B;">
+        Visual Media
+       </span>
+       <h3 class="card-title">
+        ACTUAL PHOTOGRAPHY
+       </h3>
+       <p class="card-desc">
+        High-end commercial photography, executive corporate portraits, architectural documentation, and event coverage.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Executive Headshots &amp; Board Portraits
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Commercial Architecture &amp; Real Estate
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Major Summit &amp; Event Media Production
+        </li>
+       </ul>
+       <button class="btn btn-outline btn-sm" onclick="openConsultationModal('ACTUAL Photography Inquiry')">
+        Book Media Studio →
+       </button>
+      </div>
+      <!-- Venture 3: ACTUAL DESIGN -->
+      <div class="family-card" style="border-top: 4px solid #165641;">
+       <div class="draft-image-slot" style="height:140px; margin-bottom:16px;">
+        <img alt="ACTUAL DESIGN" referrerpolicy="no-referrer" src="/src/assets/images/kigali_business_tower_1786742286170.jpg"/>
+        <span class="draft-badge">
+         DESIGN Slot
+        </span>
+       </div>
+       <span class="family-card-badge" style="background:#E8F2EE; color:#165641;">
+        Brand &amp; Creative
+       </span>
+       <h3 class="card-title">
+        ACTUAL DESIGN
+       </h3>
+       <p class="card-desc">
+        Brand strategy, visual identity design, packaging, corporate annual report formatting, and digital UI/UX design.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Corporate Brand Identity Guidelines
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Annual Report &amp; Editorial Publication
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Packaging, Signage &amp; Web UX Design
+        </li>
+       </ul>
+       <button class="btn btn-outline btn-sm" onclick="openConsultationModal('ACTUAL Design Inquiry')">
+        Request Design Brief →
+       </button>
+      </div>
+      <!-- Venture 4: ACTUAL MUSIC -->
+      <div class="family-card" style="border-top: 4px solid #334155;">
+       <div class="draft-image-slot" style="height:140px; margin-bottom:16px;">
+        <img alt="ACTUAL MUSIC" referrerpolicy="no-referrer" src="/src/assets/images/corporate_consultants_1786742274556.jpg"/>
+        <span class="draft-badge">
+         MUSIC Slot
+        </span>
+       </div>
+       <span class="family-card-badge" style="background:#F1F5F9; color:#334155;">
+        Audio &amp; Production
+       </span>
+       <h3 class="card-title">
+        ACTUAL MUSIC
+       </h3>
+       <p class="card-desc">
+        Audio branding, commercial jingles, voiceover production, sonic identities, and studio recording in Kigali.
+       </p>
+       <ul class="card-features">
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Corporate Sonic Identity &amp; Audio Logos
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         Trilingual Voiceovers (EN/FR/RW)
+        </li>
+        <li>
+         <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12">
+          </polyline>
+         </svg>
+         High-Fidelity Acoustic Audio Mastering
+        </li>
+       </ul>
+       <button class="btn btn-outline btn-sm" onclick="openConsultationModal('ACTUAL Music Inquiry')">
+        Contact Studio →
+       </button>
+      </div>
+     </div>
+     <!-- Synergy Package -->
+     <div class="family-intro-banner" style="background:#FFFFFF; border:2px solid var(--color-gold); color:var(--color-text-main);">
+      <div style="max-width:700px;">
+       <div class="section-badge gold-badge" style="margin-bottom:10px;">
+        The All-in-One Synergy Bundle
+       </div>
+       <h2 style="font-size:1.8rem; color:var(--color-primary-dark); margin-bottom:12px;">
+        New Enterprise Launch Kit
+       </h2>
+       <p style="color:#475569; font-size:0.95rem; line-height:1.6; margin-bottom:20px;">
+        Launching a company in Rwanda? Get
+        <strong>
+         RDB Registration + Full Accounting Setup
+        </strong>
+        from Actual Accounting,
+        <strong>
+         Brand Identity Design
+        </strong>
+        from Actual Design, and
+        <strong>
+         Executive Headshots
+        </strong>
+        from Actual Photography in one bundled package with 20% group discount.
+       </p>
+       <button class="btn btn-gold" onclick="openConsultationModal('New Enterprise Launch Kit')">
+        Inquire About the Launch Kit
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="page-view" id="page-resources">
+   <section class="section-py" style="background:var(--color-surface-subtle); border-bottom:1px solid var(--color-border);">
+    <div class="container">
+     <div class="section-header">
+      <div class="section-badge">
+       Compliance &amp; Knowledge
+      </div>
+      <h1 class="section-title">
+       Rwanda Tax &amp; Regulatory Hub
+      </h1>
+      <p class="section-subtitle">
+       Interactive statutory calculators, official 2026 deadlines, and guidelines for Rwandan businesses.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section-py">
+    <div class="container">
+     <!-- In-Page Interactive Rwanda Salary & Tax Calculator -->
+     <div class="calculator-container" style="margin-bottom:60px;">
+      <div style="text-align:center; margin-bottom:24px; padding-bottom:16px; border-bottom:1px solid var(--color-border-subtle);">
+       <h2 style="font-size:1.5rem; color:var(--color-primary-dark);">
+        Rwanda Salary &amp; Tax Calculator (PAYE + RSSB)
+       </h2>
+       <p class="text-muted" style="font-size:0.85rem;">
+        Calculated according to the latest official Rwanda Revenue Authority (RRA) statutory progressive tax laws.
+       </p>
+      </div>
+      <div class="calc-grid">
+       <!-- Calculator Inputs -->
+       <div class="calc-inputs-col">
+        <div class="calc-form-group">
+         <label class="calc-label" for="inpage-gross-salary">
+          Monthly Basic Gross Salary (RWF)
+         </label>
+         <div class="calc-input-wrap">
+          <input class="calc-input" id="inpage-gross-salary" min="0" step="50000" type="number" value="850000"/>
+          <span class="calc-unit">
+           RWF
+          </span>
+         </div>
+        </div>
+        <div class="calc-form-group">
+         <label class="calc-label" for="inpage-allowances">
+          Taxable Allowances / Bonus (RWF)
+         </label>
+         <div class="calc-input-wrap">
+          <input class="calc-input" id="inpage-allowances" min="0" step="10000" type="number" value="0"/>
+          <span class="calc-unit">
+           RWF
+          </span>
+         </div>
+        </div>
+        <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:14px; border-radius:8px; font-size:0.82rem; color:#475569;">
+         <strong>
+          Rwandan PAYE Brackets Applied:
+         </strong>
+         <ul style="margin-top:6px; padding-left:16px; line-height:1.5;">
+          <li>
+           0 to 60,000 RWF:
+           <strong>
+            0%
+           </strong>
+          </li>
+          <li>
+           60,001 to 100,000 RWF:
+           <strong>
+            10%
+           </strong>
+          </li>
+          <li>
+           100,001 to 200,000 RWF:
+           <strong>
+            20%
+           </strong>
+          </li>
+          <li>
+           Above 200,000 RWF:
+           <strong>
+            30%
+           </strong>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <!-- Calculator Outputs -->
+       <div class="calc-results-card">
+        <div class="calc-net-display">
+         <div class="calc-net-label">
+          Net Take-Home Pay
+         </div>
+         <div class="calc-net-amount" id="inpage-calc-net">
+          0 RWF
+         </div>
+        </div>
+        <ul class="breakdown-list">
+         <li class="breakdown-row">
+          <span>
+           PAYE Tax (Income Tax)
+          </span>
+          <strong id="inpage-calc-paye">
+           0 RWF
+          </strong>
+         </li>
+         <li class="breakdown-row">
+          <span>
+           Employee RSSB Pension (3%)
+          </span>
+          <strong id="inpage-calc-pension">
+           0 RWF
+          </strong>
+         </li>
+         <li class="breakdown-row">
+          <span>
+           Employee Maternity Fund (0.3%)
+          </span>
+          <strong id="inpage-calc-maternity">
+           0 RWF
+          </strong>
+         </li>
+         <li class="breakdown-row" style="border-top:1px dashed rgba(255,255,255,0.15); padding-top:6px;">
+          <span>
+           Employer RSSB Contribution (5.3%)
+          </span>
+          <strong id="inpage-calc-employer-pension">
+           0 RWF
+          </strong>
+         </li>
+         <li class="breakdown-row total-cost">
+          <span>
+           Total Employer Payroll Cost
+          </span>
+          <strong id="inpage-calc-total-cost" style="color:var(--color-gold);">
+           0 RWF
+          </strong>
+         </li>
+        </ul>
+        <button class="btn btn-gold btn-sm" onclick="openConsultationModal('Payroll &amp; Tax Management')" style="margin-top:20px; width:100%;">
+         Outsource Your Payroll to Us →
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Official 2026 Tax Deadlines Calendar -->
+     <div class="section-header">
+      <div class="section-badge">
+       Compliance Schedule
+      </div>
+      <h2 class="section-title">
+       2026 Rwanda Statutory Tax Deadlines
+      </h2>
+     </div>
+     <div style="background:#FFFFFF; border-radius:var(--radius-lg); border:1px solid var(--color-border); overflow:hidden; box-shadow:var(--shadow-sm); margin-bottom:40px;">
+      <table class="portal-table">
+       <thead>
+        <tr>
+         <th>
+          Statutory Tax Item
+         </th>
+         <th>
+          Frequency
+         </th>
+         <th>
+          Legal Deadline
+         </th>
+         <th>
+          Applicable Entities
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          <strong>
+           PAYE (Pay-As-You-Earn)
+          </strong>
+         </td>
+         <td>
+          Monthly
+         </td>
+         <td>
+          <span style="color:#E11D48; font-weight:700;">
+           15th of following month
+          </span>
+         </td>
+         <td>
+          All employers with staff
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <strong>
+           RSSB (Pension &amp; Maternity)
+          </strong>
+         </td>
+         <td>
+          Monthly
+         </td>
+         <td>
+          <span style="color:#E11D48; font-weight:700;">
+           15th of following month
+          </span>
+         </td>
+         <td>
+          All registered employers
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <strong>
+           Value Added Tax (VAT) 18%
+          </strong>
+         </td>
+         <td>
+          Monthly / Quarterly
+         </td>
+         <td>
+          <span style="color:#E11D48; font-weight:700;">
+           15th of following month
+          </span>
+         </td>
+         <td>
+          VAT registered businesses (Annual turnover &gt; 20M RWF)
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <strong>
+           Corporate Income Tax (CIT) 28%
+          </strong>
+         </td>
+         <td>
+          Annual
+         </td>
+         <td>
+          <span style="color:#E11D48; font-weight:700;">
+           March 31st
+          </span>
+         </td>
+         <td>
+          All registered companies (Real regime)
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <strong>
+           CIT Prepayments (Installments)
+          </strong>
+         </td>
+         <td>
+          Quarterly
+         </td>
+         <td>
+          <span style="color:#E11D48; font-weight:700;">
+           June 30, Sept 30, Dec 31
+          </span>
+         </td>
+         <td>
+          Companies paying in advance based on prior year turnover
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="page-view" id="page-contact">
+   <section class="section-py" style="background:var(--color-surface-subtle); border-bottom:1px solid var(--color-border);">
+    <div class="container">
+     <div class="section-header">
+      <div class="section-badge">
+       Get in Touch
+      </div>
+      <h1 class="section-title">
+       Contact Our Kigali Office
+      </h1>
+      <p class="section-subtitle">
+       Reach out for a confidential initial consultation, tax review, or company formation inquiry.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section-py">
+    <div class="container">
+     <div style="display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px;">
+      <!-- Contact Form -->
+      <div class="form-card">
+       <h2 style="font-size:1.4rem; color:var(--color-primary-dark); margin-bottom:18px;">
+        Send a Direct Inquiry
+       </h2>
+       <form id="contact-page-form">
+        <div class="form-row">
+         <div class="form-group">
+          <label class="form-label" for="contact-name">
+           Your Full Name *
+          </label>
+          <input class="form-input" id="contact-name" placeholder="e.g. KAGABO John" required="" type="text"/>
+         </div>
+         <div class="form-group">
+          <label class="form-label" for="contact-company">
+           Company / Organization *
+          </label>
+          <input class="form-input" id="contact-company" placeholder="e.g. Kigali Tech Ltd" required="" type="text"/>
+         </div>
+        </div>
+        <div class="form-row">
+         <div class="form-group">
+          <label class="form-label" for="contact-email">
+           Business Email Address *
+          </label>
+          <input class="form-input" id="contact-email" placeholder="kjohn@company.rw" required="" type="email"/>
+         </div>
+         <div class="form-group">
+          <label class="form-label" for="contact-phone">
+           Phone / WhatsApp *
+          </label>
+          <input class="form-input" id="contact-phone" placeholder="+250 788 000 000" required="" type="tel"/>
+         </div>
+        </div>
+        <div class="form-group">
+         <label class="form-label" for="contact-service">
+          Practice Area of Interest
+         </label>
+         <select class="form-select" id="contact-service">
+          <option value="Accounting &amp; Tax Retainer">
+           Monthly Accounting &amp; Tax Retainer
+          </option>
+          <option value="RRA Tax Audit &amp; Defense">
+           RRA Tax Audit &amp; Clearance
+          </option>
+          <option value="RDB Company Setup">
+           RDB Company Setup &amp; Foreign Investor Support
+          </option>
+          <option value="Virtual CFO Advisory">
+           Virtual CFO &amp; Financial Modeling
+          </option>
+          <option value="ACTUAL Family Bundle">
+           The ACTUAL Family Synergy Bundle
+          </option>
+         </select>
+        </div>
+        <div class="form-group">
+         <label class="form-label" for="contact-message">
+          How Can We Assist Your Business? *
+         </label>
+         <textarea class="form-textarea" id="contact-message" placeholder="Tell us briefly about your current operations and questions..." required=""></textarea>
+        </div>
+        <button class="btn btn-primary btn-lg" style="width:100%;" type="submit">
+         <span>
+          Submit Confidential Message
+         </span>
+         <svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16">
+          <line x1="22" x2="11" y1="2" y2="13">
+          </line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2">
+          </polygon>
+         </svg>
+        </button>
+       </form>
+      </div>
+      <!-- Contact Info & Map Card -->
+      <div>
+       <div class="draft-image-slot" style="height:200px; margin-bottom:20px; border:1px solid var(--color-border); box-shadow:var(--shadow-sm);">
+        <img alt="Kigali Heights Commercial Complex" referrerpolicy="no-referrer" src="/src/assets/images/kigali_business_tower_1786742286170.jpg"/>
+        <span class="draft-badge">
+         Draft Location Photo · Kigali
+        </span>
+        <div class="draft-badge-subtle">
+         <span>
+          Gasabo District, Kigali
+         </span>
+         <span style="color:var(--color-gold); font-weight:700;">
+          Office Location
+         </span>
+        </div>
+       </div>
+       <div class="card" style="background:var(--color-primary-dark); color:#FFF; border-color:var(--color-gold); margin-bottom:24px;">
+        <h3 style="color:var(--color-gold); font-size:1.3rem; margin-bottom:16px;">
+         how you can find us
+        </h3>
+        <div style="display:flex; flex-direction:column; gap:16px; font-size:0.9rem; color:#CBD5E1;">
+         <div style="display:flex; gap:12px; align-items:flex-start;">
+          <svg fill="none" height="20" stroke="#D4AF37" stroke-width="2" style="flex-shrink:0; margin-top:2px;" viewbox="0 0 24 24" width="20">
+           <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z">
+           </path>
+           <circle cx="12" cy="10" r="3">
+           </circle>
+          </svg>
+          <div>
+           <strong style="color:#FFF; display:block;">
+            Office Address:
+           </strong>
+           Kigali-location
+           <br/>
+           Rwanda
+          </div>
+         </div>
+         <div style="display:flex; gap:12px; align-items:center;">
+          <svg fill="none" height="20" stroke="#D4AF37" stroke-width="2" style="flex-shrink:0;" viewbox="0 0 24 24" width="20">
+           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+           </path>
+          </svg>
+          <div>
+           <strong style="color:#FFF; display:block;">
+            Direct Phone &amp; WhatsApp:
+           </strong>
+           +250 785 848 534
+          </div>
+         </div>
+         <div style="display:flex; gap:12px; align-items:center;">
+          <svg fill="none" height="20" stroke="#D4AF37" stroke-width="2" style="flex-shrink:0;" viewbox="0 0 24 24" width="20">
+           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+           </path>
+           <polyline points="22,6 12,13 2,6">
+           </polyline>
+          </svg>
+          <div>
+           <strong style="color:#FFF; display:block;">
+            Email Desk:
+           </strong>
+           info@actualholdings.com
+          </div>
+         </div>
+         <div style="display:flex; gap:12px; align-items:center;">
+          <svg fill="none" height="20" stroke="#D4AF37" stroke-width="2" style="flex-shrink:0;" viewbox="0 0 24 24" width="20">
+           <circle cx="12" cy="12" r="10">
+           </circle>
+           <polyline points="12 6 12 12 16 14">
+           </polyline>
+          </svg>
+          <div>
+           <strong style="color:#FFF; display:block;">
+            Working Hours:
+           </strong>
+           Mon – Sat: 8:00 AM – 7:00 PM CAT
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="page-view" id="page-portal">
+   <section class="section-py" style="background:var(--color-surface-subtle);">
+    <div class="container">
+     <div class="portal-dashboard">
+      <!-- Portal Header -->
+      <div class="portal-topbar">
+       <div class="portal-user-meta">
+        <div class="portal-avatar">
+         KT
+        </div>
+        <div>
+         <h2 id="portal-display-company" style="color:#FFF; font-size:1.2rem; margin:0;">
+          Kigali Tech Ventures Ltd
+         </h2>
+         <div id="portal-display-tin" style="color:var(--color-gold); font-size:0.78rem;">
+          RRA TIN: 109847291 • Active Client
+         </div>
+        </div>
+       </div>
+       <div style="display:flex; align-items:center; gap:12px;">
+        <span class="status-badge-active" id="portal-display-plan">
+         Growth Enterprise Plan
+        </span>
+        <button class="btn btn-outline btn-sm" onclick="logoutUser()" style="color:#FFF; border-color:rgba(255,255,255,0.3);">
+         Log Out
+        </button>
+       </div>
+      </div>
+      <!-- Portal Body Grid -->
+      <div class="portal-content-grid">
+       <!-- Left Column: Filings & Document Dropbox -->
+       <div>
+        <h3 style="font-size:1.2rem; color:var(--color-primary-dark); margin-bottom:16px;">
+         Verified Tax Filings &amp; Acknowledgment Slips
+        </h3>
+        <div style="border:1px solid var(--color-border); border-radius:var(--radius-md); overflow:hidden; margin-bottom:24px;">
+         <table class="portal-table">
+          <thead>
+           <tr>
+            <th>
+             Document Name
+            </th>
+            <th>
+             Date Processed
+            </th>
+            <th>
+             RRA Status
+            </th>
+            <th>
+             Action
+            </th>
+           </tr>
+          </thead>
+          <tbody id="portal-docs-tbody">
+           <!-- Rendered by script.js -->
+          </tbody>
+         </table>
+        </div>
+        <h3 style="font-size:1.2rem; color:var(--color-primary-dark); margin-bottom:12px;">
+         Secure Document Dropbox (Invoices / EBMs)
+        </h3>
+        <label class="dropbox-zone" for="portal-file-input" style="display:block;">
+         <input id="portal-file-input" multiple="" style="display:none;" type="file"/>
+         <svg fill="none" height="32" stroke="#0F3D2E" stroke-width="2" style="margin:0 auto 10px auto;" viewbox="0 0 24 24" width="32">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+          </path>
+          <polyline points="17 8 12 3 7 8">
+          </polyline>
+          <line x1="12" x2="12" y1="3" y2="15">
+          </line>
+         </svg>
+         <div style="font-weight:700; color:var(--color-primary-dark);">
+          Click to Browse or Drag &amp; Drop Supplier Invoices / EBMs
+         </div>
+         <div style="font-size:0.78rem; color:var(--color-text-muted); margin-top:4px;">
+          Supported: PDF, JPG, PNG, XLSX (Files are encrypted and sent directly to Lead CPA)
+         </div>
+        </label>
+       </div>
+       <!-- Right Column: CPA Messaging & Account Manager -->
+       <div>
+        <div class="card" style="padding:20px; margin-bottom:20px; background:#F8FAFC;">
+         <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--color-primary); color:#FFF; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.9rem;">
+           MJ
+          </div>
+          <div>
+           <strong style="color:var(--color-primary-dark); display:block; font-size:0.95rem;">
+            MUGISHA J, CEO
+           </strong>
+           <span style="font-size:0.75rem; color:var(--color-text-muted);">
+            Assigned Lead Tax Consultant
+           </span>
+          </div>
+         </div>
+         <div style="font-size:0.8rem; color:#475569;">
+          ✓ Next Filing: February VAT &amp; PAYE due March 15th.
+          <br/>
+          ✓ EBM compliance status: Clean.
+         </div>
+        </div>
+        <!-- Live Chat Simulation Box -->
+        <div style="border:1px solid var(--color-border); border-radius:var(--radius-md); display:flex; flex-direction:column; height:340px; background:#FFF;">
+         <div style="padding:10px 14px; background:#FAFAFA; border-bottom:1px solid var(--color-border); font-size:0.85rem; font-weight:700; color:var(--color-primary-dark);">
+          Direct ACTUAL AI Support Channel
+         </div>
+         <div id="portal-chat-box" style="flex-grow:1; padding:14px; overflow-y:auto; display:flex; flex-direction:column;">
+          <div style="align-self:flex-start; background:#E8F2EE; color:#0F3D2E; padding:8px 14px; border-radius:10px 10px 10px 0; font-size:0.85rem; max-width:85%; margin-bottom:8px;">
+           Mwaramutse! Your January VAT declaration acknowledgment receipt is ready for download in your portal.
+          </div>
+          <div style="align-self:flex-end; background:#0F3D2E; color:#FFF; padding:8px 14px; border-radius:10px 10px 0 10px; font-size:0.85rem; max-width:85%; margin-bottom:8px;">
+           Murakoze cyane. We have uploaded two new supplier EBM receipts for February.
+          </div>
+         </div>
+         <form id="portal-chat-form" style="padding:10px; border-top:1px solid var(--color-border); display:flex; gap:8px;">
+          <input class="form-input" id="portal-chat-input" placeholder="Type a message to your accountant..." required="" style="padding:8px 12px; font-size:0.85rem;" type="text"/>
+          <button class="btn btn-primary btn-sm" type="submit">
+           Send
+          </button>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="page-view" id="page-login">
+   <section class="section-py" style="background:var(--color-surface-subtle); min-height:80vh; display:flex; align-items:center;">
+    <div class="container" style="max-width:500px;">
+     <div class="form-card">
+      <div style="text-align:center; margin-bottom:24px;">
+       <div class="brand-emblem" style="margin:0 auto 14px auto; width:56px; height:56px; padding:6px; box-shadow:var(--shadow-md);">
+        <svg height="100%" viewbox="0 0 500 500" width="100%">
+         <path d="M 250 20 L 25 390 L 230 350 L 230 265 L 186 265 L 250 137 Z" fill="#121619">
+         </path>
+         <path d="M 250 20 L 475 390 L 270 350 L 270 265 L 314 265 L 250 137 Z" fill="#00824B">
+         </path>
+        </svg>
+       </div>
+       <h1 style="font-size:1.6rem; color:var(--color-primary-dark); margin-bottom:4px;">
+        Sign In to Client Portal
+       </h1>
+       <p class="text-muted" style="font-size:0.85rem;">
+        Access your company tax filings and balance sheets.
+       </p>
+      </div>
+      <form id="login-form">
+       <div class="form-group">
+        <label class="form-label" for="login-email">
+         Business Email or RRA TIN
+        </label>
+        <input class="form-input" id="login-email" placeholder="e.g. name@company.rw" required="" type="text"/>
+       </div>
+       <div class="form-group">
+        <label class="form-label" for="login-password">
+         Password
+        </label>
+        <input class="form-input" id="login-password" placeholder="Enter your password" required="" type="password"/>
+       </div>
+       <button class="btn btn-primary" style="width:100%; margin-bottom:12px;" type="submit">
+        Sign In to Portal
+       </button>
+       <div style="text-align:center; font-size:0.85rem; color:var(--color-text-muted);">
+        Don't have an account yet?
+        <a href="#signup" onclick="navigateTo('signup')" style="color:var(--color-primary); font-weight:700;">
+         Open Client Account →
+        </a>
+       </div>
+      </form>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="page-view" id="page-signup">
+   <section class="section-py" style="background:var(--color-surface-subtle); min-height:80vh; display:flex; align-items:center;">
+    <div class="container" style="max-width:580px;">
+     <div class="form-card">
+      <div style="text-align:center; margin-bottom:24px;">
+       <div class="brand-emblem" style="margin:0 auto 14px auto; width:56px; height:56px; padding:6px; box-shadow:var(--shadow-md);">
+        <svg height="100%" viewbox="0 0 500 500" width="100%">
+         <path d="M 250 20 L 25 390 L 230 350 L 230 265 L 186 265 L 250 137 Z" fill="#121619">
+         </path>
+         <path d="M 250 20 L 475 390 L 270 350 L 270 265 L 314 265 L 250 137 Z" fill="#00824B">
+         </path>
+        </svg>
+       </div>
+       <h1 style="font-size:1.6rem; color:var(--color-primary-dark); margin-bottom:4px;">
+        Open New Client Account
+       </h1>
+       <p class="text-muted" style="font-size:0.85rem;">
+        Get started with ACTUAL ACCOUNTING practice management in Rwanda.
+       </p>
+      </div>
+      <form id="signup-form">
+       <div class="form-row">
+        <div class="form-group">
+         <label class="form-label" for="signup-name">
+          Full Name *
+         </label>
+         <input class="form-input" id="signup-name" placeholder="e.g. Kagabo John" required="" type="text"/>
+        </div>
+        <div class="form-group">
+         <label class="form-label" for="signup-company">
+          Business Entity Name *
+         </label>
+         <input class="form-input" id="signup-company" placeholder="e.g. Kigali Logistics Ltd" required="" type="text"/>
+        </div>
+       </div>
+       <div class="form-row">
+        <div class="form-group">
+         <label class="form-label" for="signup-tin">
+          RRA TIN (Tax Number)
+         </label>
+         <input class="form-input" id="signup-tin" placeholder="9-digit TIN (or leave blank if new)" type="text"/>
+        </div>
+        <div class="form-group">
+         <label class="form-label" for="signup-email">
+          Official Email Address *
+         </label>
+         <input class="form-input" id="signup-email" placeholder="info@company.rw" required="" type="email"/>
+        </div>
+       </div>
+       <div class="form-group">
+        <label class="form-label" for="signup-plan">
+         Desired Retainer Plan
+        </label>
+        <select class="form-select" id="signup-plan">
+         <option value="Growth Enterprise Retainer">
+          Growth Enterprise Retainer
+         </option>
+         <option value="Starter SME Retainer">
+          Starter SME Retainer
+         </option>
+         <option value="Corporate Suite Retainer">
+          Corporate Suite Retainer
+         </option>
+         <option value="RDB Company Setup Only">
+          RDB Company Setup &amp; TIN Only
+         </option>
+        </select>
+       </div>
+       <button class="btn btn-gold btn-lg" style="width:100%; margin-bottom:16px;" type="submit">
+        Create Account &amp; Open Portal →
+       </button>
+       <div style="text-align:center; font-size:0.85rem; color:var(--color-text-muted);">
+        Already registered?
+        <a href="#login" onclick="navigateTo('login')" style="color:var(--color-primary); font-weight:700;">
+         Sign in here →
+        </a>
+       </div>
+      </form>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="modal-overlay" id="consultation-modal" onclick="closeConsultationModal()">
+   <div class="modal-container" onclick="event.stopPropagation()">
+    <div class="modal-header">
+     <h3 class="modal-title">
+      Book a Practice Consultation
+     </h3>
+     <button class="modal-close-btn" onclick="closeConsultationModal()">
+      ×
+     </button>
+    </div>
+    <div class="modal-body">
+     <p class="text-muted" style="font-size:0.88rem; margin-bottom:18px;">
+      Speak directly with a Senior Rwandan Tax Consultant at Kigali or via Google Meet.
+     </p>
+     <form id="consultation-form">
+      <div class="form-group">
+       <label class="form-label" for="consult-service-input">
+        Selected Service / Focus
+       </label>
+       <input class="form-input" id="consult-service-input" readonly="" type="text" value="General Accounting &amp; Tax Advisory"/>
+      </div>
+      <div class="form-row">
+       <div class="form-group">
+        <label class="form-label" for="consult-name">
+         Full Name *
+        </label>
+        <input class="form-input" id="consult-name" placeholder="e.g. Alice Umutoni" required="" type="text"/>
+       </div>
+       <div class="form-group">
+        <label class="form-label" for="consult-company">
+         Company Name *
+        </label>
+        <input class="form-input" id="consult-company" placeholder="e.g. Great Lakes Ventures" required="" type="text"/>
+       </div>
+      </div>
+      <div class="form-row">
+       <div class="form-group">
+        <label class="form-label" for="consult-email">
+         Email Address *
+        </label>
+        <input class="form-input" id="consult-email" placeholder="alice@domain.rw" required="" type="email"/>
+       </div>
+       <div class="form-group">
+        <label class="form-label" for="consult-phone">
+         Phone / WhatsApp *
+        </label>
+        <input class="form-input" id="consult-phone" placeholder="+250 788 123 456" required="" type="tel"/>
+       </div>
+      </div>
+      <div class="form-group">
+       <label class="form-label" for="consult-date">
+        Preferred Meeting Date
+       </label>
+       <input class="form-input" id="consult-date" type="date" value="2026-08-18"/>
+      </div>
+      <button class="btn btn-gold btn-lg" style="width:100%;" type="submit">
+       Confirm Consultation Request
+      </button>
+     </form>
+    </div>
+   </div>
+  </div>
+  <div class="modal-overlay" id="tax-modal" onclick="closeTaxModal()">
+   <div class="modal-container" onclick="event.stopPropagation()">
+    <div class="modal-header">
+     <h3 class="modal-title">
+      Rwanda Salary &amp; Tax Calculator
+     </h3>
+     <button class="modal-close-btn" onclick="closeTaxModal()">
+      ×
+     </button>
+    </div>
+    <div class="modal-body">
+     <div class="calc-form-group">
+      <label class="calc-label" for="modal-gross-salary">
+       Enter Monthly Gross Salary (RWF)
+      </label>
+      <div class="calc-input-wrap">
+       <input class="calc-input" id="modal-gross-salary" min="0" step="50000" type="number" value="650000"/>
+       <span class="calc-unit">
+        RWF
+       </span>
+      </div>
+     </div>
+     <div class="calc-results-card" style="margin-top:16px;">
+      <div class="calc-net-display">
+       <div class="calc-net-label">
+        Estimated Monthly Net Pay
+       </div>
+       <div class="calc-net-amount" id="modal-calc-net">
+        0 RWF
+       </div>
+      </div>
+      <ul class="breakdown-list">
+       <li class="breakdown-row">
+        <span>
+         PAYE Income Tax
+        </span>
+        <strong id="modal-calc-paye">
+         0 RWF
+        </strong>
+       </li>
+       <li class="breakdown-row">
+        <span>
+         Employee RSSB (3.3%)
+        </span>
+        <strong id="modal-calc-rssb-emp">
+         0 RWF
+        </strong>
+       </li>
+       <li class="breakdown-row">
+        <span>
+         Employer RSSB (5.3%)
+        </span>
+        <strong id="modal-calc-rssb-emplr">
+         0 RWF
+        </strong>
+       </li>
+       <li class="breakdown-row total-cost">
+        <span>
+         Total Employer Payroll Cost
+        </span>
+        <strong id="modal-calc-total-cost" style="color:var(--color-gold);">
+         0 RWF
+        </strong>
+       </li>
+       <li class="breakdown-row">
+        <span>
+         Effective Tax Rate
+        </span>
+        <strong id="modal-calc-rate">
+         0%
+        </strong>
+       </li>
+      </ul>
+     </div>
+     <div style="margin-top:20px; text-align:center;">
+      <button class="btn btn-primary" onclick="closeTaxModal(); openConsultationModal('Payroll Outsourcing');" style="width:100%;">
+       Get Professional Payroll Management →
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer class="footer">
+   <div class="container">
+    <div class="footer-grid">
+     <!-- Col 1: Brand & Disclaimer -->
+     <div>
+      <div class="brand-logo-link" style="margin-bottom:16px;">
+       <div class="brand-emblem" style="background:#FFFFFF; border-color:var(--color-gold);">
+        <img alt="ACTUAL HOLDINGS CO LTD Logo" src="actual-logo.jpeg"/>
+       </div>
+       <div class="brand-text-col">
+        <div class="brand-main-title" style="color:#FFF;">
+         ACTUAL
+         <span style="color:var(--color-gold);">
+          ACCOUNTING
+         </span>
+        </div>
+        <div class="brand-tagline" style="color:#94A3B8;">
+         ACTUAL HOLDINGS CO LTD
+        </div>
+       </div>
+      </div>
+      <p style="font-size:0.85rem; color:#94A3B8; line-height:1.6; margin-bottom:16px;">
+       Accounting and Business Consultancy practice based in Rwanda. Helping enterprises establish transparent, compliant, and profitable operations.
+      </p>
+     </div>
+     <!-- Col 2: Navigation Links -->
+     <div>
+      <div class="footer-col-title">
+       Navigation
+      </div>
+      <ul class="footer-links">
+       <li>
+        <button onclick="navigateTo('home')">
+         • Home
+        </button>
+       </li>
+       <li>
+        <button onclick="navigateTo('services')">
+         • Services &amp; Plans
+        </button>
+       </li>
+       <li>
+        <button onclick="navigateTo('about')">
+         • About Us
+        </button>
+       </li>
+       <li>
+        <button onclick="navigateTo('family')">
+         • The ACTUAL Family
+        </button>
+       </li>
+       <li>
+        <button onclick="navigateTo('resources')">
+         • Rwanda Tax Hub
+        </button>
+       </li>
+       <li>
+        <button onclick="navigateTo('contact')">
+         • Contact Desk
+        </button>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 3: Client Portal -->
+     <div>
+      <div class="footer-col-title">
+       Client Desk
+      </div>
+      <ul class="footer-links">
+       <li>
+        <button onclick="navigateTo('login')">
+         Sign In to Client Portal →
+        </button>
+       </li>
+       <li>
+        <button onclick="navigateTo('signup')">
+         Open New Client Account →
+        </button>
+       </li>
+       <li>
+        <button onclick="openTaxModal()">
+         Rwanda Tax Calculator
+        </button>
+       </li>
+       <li>
+        <button onclick="openConsultationModal()">
+         Book Practice Review
+        </button>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 4: Kigali Headquarters -->
+     <div>
+      <div class="footer-col-title">
+       Kigali Office
+      </div>
+      <p style="font-size:0.85rem; color:#94A3B8; line-height:1.6; margin-bottom:8px;">
+       Gasabo District, Kigali, Rwanda
+       <br/>
+       Phone: +250 785 848 534
+       <br/>
+       Email: info@actualholdings.com
+      </p>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <div>
+      © 2026 ACTUAL ACCOUNTING. All Rights Reserved. ACTUAL HOLDINGS CO LTD.
+     </div>
+     <div style="display:flex; gap:16px;">
+      <button onclick="navigateTo('about')">
+       Privacy Policy
+      </button>
+      <span>
+       •
+      </span>
+      <button onclick="navigateTo('about')">
+       Terms of Service
+      </button>
+      <span>
+       •
+      </span>
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+       Back to Top ↑
+      </button>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
