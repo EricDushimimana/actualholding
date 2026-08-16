@@ -1509,49 +1509,31 @@ button {
 /*---social media---*/
 
 .socials {
-
     display: flex;
-
     gap: 8px;
-
     margin-top: 22px;
-
 }
-
-
 .socials a {
-
     width: 35px;
     height: 35px;
-
     display: grid;
     place-items: center;
-
     border:
         1px solid rgba(255,255,255,0.15);
-
     border-radius: 50%;
-
     color:
         rgba(255,255,255,0.7);
 
     transition:
-        var(--transition);
+        var(--transition-normal);
 
 }
 
 
 .socials a:hover {
-
-    background:
-        var(--yellow);
-
-    color:
-        var(--black);
-
-    border-color:
-        var(--yellow);
-
+    background: #ffc107;
+    color: #000000;
+    border-color:#ffc107;
 }
 /* Toast Notifications */
 .toast-container {
