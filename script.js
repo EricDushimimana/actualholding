@@ -73,7 +73,8 @@ const PAGE_TITLES = {
   contact: 'Contact Kigali Headquarters | ACTUAL ACCOUNTING',
   login: 'Client Portal Sign In | ACTUAL ACCOUNTING',
   signup: 'Open New Client Account | ACTUAL ACCOUNTING',
-  portal: 'Client Compliance Portal | ACTUAL ACCOUNTING'
+  portal: 'Client Compliance Portal | ACTUAL ACCOUNTING',
+  faq: 'FAQs | ACTUAL ACCOUNTING',
 };
 
 function navigateTo(pageId) {
