@@ -1506,7 +1506,53 @@ button {
     grid-template-columns: 1fr;
   }
 }
+/*---social media---*/
 
+.socials {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 22px;
+
+}
+
+
+.socials a {
+
+    width: 35px;
+    height: 35px;
+
+    display: grid;
+    place-items: center;
+
+    border:
+        1px solid rgba(255,255,255,0.15);
+
+    border-radius: 50%;
+
+    color:
+        rgba(255,255,255,0.7);
+
+    transition:
+        var(--transition);
+
+}
+
+
+.socials a:hover {
+
+    background:
+        var(--yellow);
+
+    color:
+        var(--black);
+
+    border-color:
+        var(--yellow);
+
+}
 /* Toast Notifications */
 .toast-container {
   position: fixed;
